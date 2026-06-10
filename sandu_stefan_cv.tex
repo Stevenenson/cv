@@ -28,15 +28,63 @@
 
 % ── Professional Summary ──────────────────────────────────────────────────────
 \section{Professional Summary}
-Second-year Economic Cybernetics student at ASE Bucharest with a strong interest in
-cybersecurity, AI security, and building resilient systems. Experienced in reverse-engineering
-live APIs, implementing secure credential management, and building privacy-focused AI agents.
-At two international hackathons (VibeHack 2026 Bucharest, AI Agent Week Fest 2026 Milano),
-I shipped working prototypes under 24-hour deadlines — from WhatsApp-native AI assistants
-to privacy-preserving intelligent agents. I combine quantitative thinking (Python, C++,
-statistics) with a security-first mindset to identify vulnerabilities and build robust
-solutions. Actively seeking internships and research opportunities in cybersecurity,
-penetration testing, and AI security.
+Second-year Economic Cybernetics student at ASE Bucharest with a security-first
+approach to software engineering. Competed in two international hackathons in 2026:
+reverse-engineered a production flight-search API at VibeHack Bucharest (24\,h) and
+built a privacy-preserving AI workspace with local-first data architecture at the
+AI Agent Olympics during Milan AI Week at Fiera Milano (7-day hybrid build).
+Combines quantitative training (statistics, econometrics, Python, C++) with hands-on
+experience in API security analysis, secure credential management, and privacy-by-design
+systems. Seeking internships in cybersecurity, penetration testing, or AI security
+where I can apply my builder mindset and analytical rigour.
+
+% ── Education ────────────────────────────────────────────────────────────────
+\section{Education}
+
+\cventry{2024 -- 2027 (expected)}{B.Sc.\ Economic Cybernetics, Statistics \& Computer Science}%
+        {Academy of Economic Studies (ASE)}{Bucharest}{}{
+  Relevant coursework: Statistics, Mathematics, Econometrics, Databases, Programming Fundamentals, Data Security.
+}
+
+% ── Technical Skills ─────────────────────────────────────────────────────────
+\section{Technical Skills}
+
+\cvitem{Languages}{Python (intermediate), C++, SQL, HTML/CSS, JavaScript/TypeScript (reading level)}
+\cvitem{Frameworks}{FastAPI, Next.js (exposure), Electron (exposure)}
+\cvitem{Tools}{Git/GitHub, Linux, Docker, Twilio API, Google Gemini API, OpenAI API, Firebase}
+\cvitem{Security}{API reverse engineering \& traffic analysis, secure credential management, privacy-by-design architecture, local-first data storage patterns}
+\cvitem{Design}{Figma, Adobe After Effects, Premiere Pro, Photoshop, Illustrator}
+
+% ── Projects (Hackathons) ───────────────────────────────────────────────────
+\section{Hackathon Projects}
+
+\cventry{13--20 May 2026}{PrivAI --- Privacy-First AI Workspace}%
+        {AI Agent Olympics -- Milan AI Week 2026}{Fiera Milano, Italy (in-person)}{}{
+  Built a desktop AI workspace for business automation with a team of 4 at Europe's
+  largest AI conference (\$32\,000+ prize pool, hosted by lablab.ai).
+  All chat data stays on-device in SQLite; Firebase handles only authentication.
+  \begin{itemize}
+    \item Developed a \textbf{privacy guard} module that applies regex-based redaction to outbound prompts, preventing PII leakage to external LLM providers.
+    \item Built a FastAPI backend serving a Next.js/Electron frontend with SSE streaming, file tools, and terminal access for autonomous agent workflows.
+    \item Implemented \textbf{local-first architecture}: conversations, search caches, and redaction logs stored exclusively in on-device SQLite --- zero chat data touches the cloud.
+    \item Integrated Google Gemini API with multi-model support (text + vision), orchestrated via an agentic pipeline with tool-calling, web search (SearXNG), and approval workflows.
+  \end{itemize}
+  \small{\textit{Tech: Python, TypeScript, FastAPI, Next.js, Electron, Firebase Auth, SQLite, Gemini API}}
+}
+
+\cventry{14--15 Mar 2026}{JetSeeker --- WhatsApp AI Travel Assistant}%
+        {VibeHack Bucharest -- Vola.ro AI Challenge}{Bucharest}{}{
+  Built a WhatsApp-native AI travel assistant in 24 hours for Romania's largest
+  online travel agency (vola.ro). The bot searches real flights, analyses booking
+  screenshots, and identifies destinations from photos --- all inside WhatsApp.
+  \begin{itemize}
+    \item \textbf{Reverse-engineered Vola.ro's production flight-search API}: intercepted network traffic, analysed request/response structures, session handling, and polling mechanisms to build a reliable data integration layer.
+    \item Built an LLM function-calling pipeline (Qwen3-8B) that extracts IATA codes and dates from natural language, calls the flight API, and formats results conversationally.
+    \item Integrated Twilio WhatsApp API with FastAPI, using background task processing to handle Twilio's webhook timeout constraints.
+    \item Designed for \textbf{group chat dynamics}: selective response logic (reply only when tagged), multi-turn context management, and handling conflicting travel preferences from multiple users.
+  \end{itemize}
+  \small{\textit{Tech: Python, FastAPI, Twilio, OpenAI-compatible API, Vola.ro API (reverse-engineered)}}
+}
 
 % ── Experience ───────────────────────────────────────────────────────────────
 \section{Experience}
@@ -55,50 +103,8 @@ penetration testing, and AI security.
   \end{itemize}
 }
 
-% ── Education ────────────────────────────────────────────────────────────────
-\section{Education}
-
-\cventry{2024 -- 2027 (expected)}{B.Sc.\ Economic Cybernetics, Statistics \& Computer Science}%
-        {Academy of Economic Studies (ASE)}{Bucharest}{}{
-  Relevant coursework: Statistics, Mathematics, Econometrics, Databases, Programming Fundamentals, Data Security.
-}
-
-% ── Skills ───────────────────────────────────────────────────────────────────
-\section{Skills}
-
-\cvitem{Programming}{Python (intermediate), C++, HTML/CSS, SQL, REST APIs}
-\cvitem{Frameworks \& Tools}{FastAPI, Git/GitHub, Linux, Docker, Twilio API, OpenAI API}
-\cvitem{Security}{API analysis \& reverse engineering, secure credential management, privacy-by-design}
-\cvitem{Design}{Adobe After Effects, Premiere Pro, Photoshop, Figma, Illustrator}
-\cvitem{Productivity}{Microsoft Office (Excel, PowerPoint, Word), Google Analytics}
-\cvitem{Languages}{Romanian (Native), English (Professional B2/C1), French (B1)}
-
-% ── Projects \& Activities ───────────────────────────────────────────────────
-\section{Projects \& Activities}
-
-\cventry{May 2026}{Hackathon Participant -- AI Agent Week Fest}%
-        {AI Agent Hackathon}{Milano, Italy (in-person)}{}{
-  Participated in an international AI agent hackathon in Milan as part of a team of 4,
-  building PrivAI --- a privacy-focused AI agent system.
-  \begin{itemize}
-    \item Designed and developed intelligent AI agents with a focus on data privacy, secure data handling, and user consent management.
-    \item Collaborated in an international team of 4, working in-person at the AI Agent Week Fest in Milano.
-    \item Explored techniques for building AI systems that respect user privacy while maintaining utility and performance.
-    \item Gained hands-on experience with AI agent architectures, multi-agent coordination, and privacy-preserving computation.
-  \end{itemize}
-}
-
-\cventry{14--15 Mar 2026}{Hackathon Participant -- Vola Travel AI Challenge}%
-        {VibeHack Bucharest}{Bucharest}{}{
-  Competed in a 24-hour AI hackathon sponsored by Vola.ro (Romania's largest online travel agency),
-  building JetSeeker --- a WhatsApp-native AI travel assistant from scratch.
-  \begin{itemize}
-    \item Reverse-engineered Vola.ro's live flight-search API and built a secure data integration layer for real-time price retrieval, demonstrating API analysis and security research skills.
-    \item Designed a conversational AI agent integrating with WhatsApp (via Twilio) to handle flight search, trip planning, and booking screenshot analysis using LLM function calling.
-    \item Implemented secure credential management using environment variables and secrets rotation, avoiding hardcoded API keys.
-    \item Architected multi-turn conversation context management for group chat scenarios with multiple users and conflicting preferences.
-  \end{itemize}
-}
+% ── Activities \& Competitions ───────────────────────────────────────────────
+\section{Activities \& Competitions}
 
 \cventry{Mar -- May 2022}{Volunteer Ambassador}{SCOALA-AMBASADOR -- EU Programme}{Bucharest}{}{
   Organised school activities supporting the EU School Ambassador initiative, promoting European values and civic engagement.
@@ -118,5 +124,10 @@ penetration testing, and AI security.
 \cventry{Sep 2021 -- May 2024}{Volunteer}{Neghi\c{t}\u{a} Children's Centre}{Bucharest}{}{
   Supported activities for underprivileged children over three years, demonstrating sustained commitment, empathy, and social responsibility.
 }
+
+% ── Languages ────────────────────────────────────────────────────────────────
+\section{Languages}
+
+\cvitem{}{Romanian (Native) \quad English (Professional -- B2/C1) \quad French (B1)}
 
 \end{document}
