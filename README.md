@@ -1,6 +1,6 @@
-# 📄 Sandu Stefan — CV / Resume
+# 📄 Sandu Stefan · CV / Resume
 
-**Economic Cybernetics, Statistics & Computer Science** — ASE Bucharest (2024-2027)
+**Economic Cybernetics, Statistics & Computer Science** at ASE Bucharest (2024-2027)
 
 ## 📥 Download
 
@@ -10,10 +10,10 @@
 
 | | Project | Event |
 |---|---|---|
-| 🛡️ | **[InvoiceGuard](https://github.com/Stevenenson/invoice-guard)** — pre-payment invoice fraud detection (ANAF live, cloned suppliers, changed IBANs) | ITFest 2026 · Oct 2026 |
-| 🔐 | **[PrivAI](https://github.com/Stevenenson/PrivAI-AIAgentHackathon2026)** — privacy-first AI workspace, local-only data | AI Agent Olympics, Milan AI Week · May 2026 |
-| ✈️ | **[JetSeeker](https://github.com/Stevenenson/JetSeeker-VibeHack2026)** — WhatsApp AI travel assistant, reverse-engineered flight API | VibeHack Bucharest · Mar 2026 |
-| 🇺🇸 | **U.S. Work & Travel** — Frank & Patty's, Ben & Jerry's | Virginia Beach, VA · Jun–Sep 2026 |
+| 🛡️ | **[InvoiceGuard](https://github.com/Stevenenson/invoice-guard)**: pre-payment invoice fraud detection (ANAF live, cloned suppliers, changed IBANs) | ITFest 2026 · Oct 2026 |
+| 🔐 | **[PrivAI](https://github.com/Stevenenson/PrivAI-AIAgentHackathon2026)**: privacy-first AI workspace, local-only data | AI Agent Olympics, Milan AI Week · May 2026 |
+| ✈️ | **[JetSeeker](https://github.com/Stevenenson/JetSeeker-VibeHack2026)**: WhatsApp AI travel assistant, reverse-engineered flight API | VibeHack Bucharest · Mar 2026 |
+| 🇺🇸 | **U.S. Work & Travel**: Frank & Patty's, Ben & Jerry's | Virginia Beach, VA · Jun to Sep 2026 |
 
 ## ✏️ Edit
 
