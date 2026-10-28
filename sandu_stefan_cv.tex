@@ -58,6 +58,20 @@ where I can apply my builder mindset and analytical rigour.
 % ── Projects (Hackathons) ───────────────────────────────────────────────────
 \section{Hackathon Projects}
 
+\cventry{24--25 Oct 2026}{InvoiceGuard --- Pre-Payment Invoice Fraud Detection}%
+        {ITFest 2026 -- Challenge 4}{Romania}{}{
+  Built a desktop app that checks every incoming e-Factura invoice from ANAF's SPV
+  before it is paid or imported into accounting software (SAGA, WinMentor), giving
+  a clear, explained verdict: Verified, Review, or Blocked.
+  \begin{itemize}
+    \item Designed an explainable \textbf{fraud-detection rule engine} that catches changed IBANs (vs.\ contract and payment history), look-alike ``clone'' suppliers, duplicate invoices, and unusual amounts, with a 0--100 risk score.
+    \item Integrated the \textbf{ANAF public API live} to verify that suppliers exist, are active, match their CUI and are registered for VAT --- respecting rate limits (100 CUIs/request, 1 req/s) with a 6-hour cache and offline fallback.
+    \item Built a \textbf{hardened XML parser} for the official e-Factura format (UBL 2.1 / CIUS-RO) using defusedxml to block XXE and XML-bomb attacks; validated CUI check digits and IBAN checksums.
+    \item Shipped a cross-platform desktop app (pywebview, Windows/macOS) on a local FastAPI server --- all data stays on the accountant's machine, ANAF being the only external call --- plus a web demo and a Chrome extension.
+  \end{itemize}
+  \small{\textit{Tech: Python, FastAPI, pywebview, JavaScript, HTML/CSS, httpx, defusedxml, ANAF API, Chrome Extension}}
+}
+
 \cventry{13--20 May 2026}{PrivAI --- Privacy-First AI Workspace}%
         {AI Agent Olympics -- Milan AI Week 2026}{Fiera Milano, Italy (in-person)}{}{
   Built a desktop AI workspace for business automation with a team of 4 at Europe's
@@ -84,6 +98,25 @@ where I can apply my builder mindset and analytical rigour.
     \item Designed for \textbf{group chat dynamics}: selective response logic (reply only when tagged), multi-turn context management, and handling conflicting travel preferences from multiple users.
   \end{itemize}
   \small{\textit{Tech: Python, FastAPI, Twilio, OpenAI-compatible API, Vola.ro API (reverse-engineered)}}
+}
+
+% ── Work & Travel ────────────────────────────────────────────────────────────
+\section{Work \& Travel}
+
+\cventry{Jun 2026 -- Sep 2026}{Multi-Role Restaurant Associate (U.S. Work \& Travel)}%
+        {Frank \& Patty's}{Virginia Beach, VA, USA}{}{
+  \begin{itemize}
+    \item \textbf{Server, Food Runner \& Busser:} Welcomed guests, took accurate food and beverage orders, answered menu inquiries, delivered dishes promptly, and cleared/reset tables to ensure rapid turnover during peak hours.
+    \item \textbf{Line Cook:} Prepared and plated burgers, hot dogs, salads, and desserts in a fast-paced kitchen environment, maintaining quality control and strict sanitation standards.
+  \end{itemize}
+}
+
+\cventry{Jun 2026 -- Sep 2026}{Customer Service Associate (U.S. Work \& Travel)}%
+        {Ben \& Jerry's}{Virginia Beach, VA, USA}{}{
+  \begin{itemize}
+    \item Provided friendly, fast-paced service to hundreds of customers daily, handcrafting custom sundaes, milkshakes, and smoothies.
+    \item Operated POS cash registers, balanced daily transactions, restocked inventory, and maintained store cleanliness.
+  \end{itemize}
 }
 
 % ── Experience ───────────────────────────────────────────────────────────────
